@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='q4' inline='true' name='federated.0wzzus40n9jh171h7emy4033wvog' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='q4' name='textscan.1jn3wav1o9a1x711e233s0oayerp'>
+            <connection class='textscan' directory='C:/Users/bsuha/Downloads/DSA - 0606 - DHV/CO1/AT1' filename='q4.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1jn3wav1o9a1x711e233s0oayerp' name='q4.txt' table='[q4#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Category' ordinal='0' />
+            <column datatype='integer' name='UnitsSold' ordinal='1' />
+            <column datatype='integer' name='ProfitMargin' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[q4.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[q4.txt]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[q4.txt_3510B7A7C35D4B5491AD90205143E9EA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UnitsSold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[UnitsSold]</local-name>
+            <parent-name>[q4.txt]</parent-name>
+            <remote-alias>UnitsSold</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[q4.txt_3510B7A7C35D4B5491AD90205143E9EA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProfitMargin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProfitMargin]</local-name>
+            <parent-name>[q4.txt]</parent-name>
+            <remote-alias>ProfitMargin</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[q4.txt_3510B7A7C35D4B5491AD90205143E9EA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Profit Margin' datatype='integer' name='[ProfitMargin]' role='measure' type='quantitative' />
+      <column caption='Units Sold' datatype='integer' name='[UnitsSold]' role='measure' type='quantitative' />
+      <column caption='q4.txt' datatype='table' name='[__tableau_internal_object_id__].[q4.txt_3510B7A7C35D4B5491AD90205143E9EA]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='q4.txt' id='q4.txt_3510B7A7C35D4B5491AD90205143E9EA'>
+            <properties context=''>
+              <relation connection='textscan.1jn3wav1o9a1x711e233s0oayerp' name='q4.txt' table='[q4#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Category' ordinal='0' />
+                  <column datatype='integer' name='UnitsSold' ordinal='1' />
+                  <column datatype='integer' name='ProfitMargin' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Q3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Question 4 - 192424350</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='q4' name='federated.0wzzus40n9jh171h7emy4033wvog' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wzzus40n9jh171h7emy4033wvog'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column caption='Profit Margin' datatype='integer' name='[ProfitMargin]' role='measure' type='quantitative' />
+            <column caption='Units Sold' datatype='integer' name='[UnitsSold]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ProfitMargin]' derivation='Sum' name='[sum:ProfitMargin:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[UnitsSold]' derivation='Sum' name='[sum:UnitsSold:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0wzzus40n9jh171h7emy4033wvog].[sum:ProfitMargin:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7031491994857788' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wzzus40n9jh171h7emy4033wvog].[sum:UnitsSold:qk]</rows>
+        <cols>[federated.0wzzus40n9jh171h7emy4033wvog].[none:Category:nk]</cols>
+      </table>
+      <simple-id uuid='{26D48396-A42E-4C57-925F-669E0ABDFF38}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Q3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0wzzus40n9jh171h7emy4033wvog].[sum:ProfitMargin:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0wzzus40n9jh171h7emy4033wvog].[none:Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{13FA0C05-BC58-45D2-9CE1-3AE2085A3A90}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Q3' width='192'>
+      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
+      aQyAlPZ/S53KqG5RcTUAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

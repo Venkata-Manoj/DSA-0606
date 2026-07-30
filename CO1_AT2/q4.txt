@@ -1,0 +1,5 @@
+Category,UnitsSold,ProfitMargin
+Electronics,500,5
+Clothing,400,15
+Books,300,20
+Toys,200,25

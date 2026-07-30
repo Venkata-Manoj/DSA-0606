@@ -1,0 +1,13 @@
+ProductionLine,DefectRatePPM
+Line A,2
+Line B,5
+Line C,12
+Line D,45
+Line E,120
+Line F,580
+Line G,2100
+Line H,8500
+Line I,22000
+Line J,48000
+Line K,78000
+Line L,95000
