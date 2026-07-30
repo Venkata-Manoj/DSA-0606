@@ -1,0 +1,5 @@
+Response,Count
+Poor,15
+Fair,30
+Good,90
+Excellent,65

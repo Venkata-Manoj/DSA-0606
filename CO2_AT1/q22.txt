@@ -1,0 +1,7 @@
+Month,ProfitLoss
+Jan,-15
+Feb,8
+Mar,-3
+Apr,22
+May,5
+Jun,-10

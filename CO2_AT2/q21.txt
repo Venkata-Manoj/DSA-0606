@@ -1,0 +1,5 @@
+Channel,Donations,RetentionPct
+Online,150000,60
+Events,80000,75
+Direct Mail,50000,40
+Corporate,200000,85

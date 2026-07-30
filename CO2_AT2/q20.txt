@@ -1,0 +1,5 @@
+Route,PassengerVolume,OnTimePct
+NYC–LA,5000,75
+NYC–Chicago,3000,90
+NYC–Miami,4500,60
+NYC–Boston,1500,95

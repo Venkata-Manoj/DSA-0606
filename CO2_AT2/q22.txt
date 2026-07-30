@@ -1,0 +1,6 @@
+Neighborhood,MedianPrice,DaysOnMarket
+Riverside,450000,20
+Hillside,600000,45
+Downtown,700000,15
+Suburbs,350000,60
+Lakeside,800000,25

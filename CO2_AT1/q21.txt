@@ -1,0 +1,6 @@
+Region,SalesIndex,X,Y
+North,80,2,3
+South,45,2,1
+East,95,4,2
+West,60,0,2
+Central,70,2,2

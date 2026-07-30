@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='q23' inline='true' name='federated.0aqfdzc022t3ps1f0x26q1tox8rh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='q23' name='textscan.0iwxgx11m29lw71ga7bme0yuoyw6'>
+            <connection class='textscan' directory='C:/Users/bsuha/Downloads/DSA - 0606 - DHV/CO&apos;s/CO2_AT1' filename='q23.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0iwxgx11m29lw71ga7bme0yuoyw6' name='q23.txt' table='[q23#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Category' ordinal='0' />
+            <column datatype='integer' name='Revenue' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[q23.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[q23.txt]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[q23.txt_99011964660746E3A51ACD1AE9237185]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[q23.txt]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[q23.txt_99011964660746E3A51ACD1AE9237185]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='q23.txt' datatype='table' name='[__tableau_internal_object_id__].[q23.txt_99011964660746E3A51ACD1AE9237185]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='q23.txt' id='q23.txt_99011964660746E3A51ACD1AE9237185'>
+            <properties context=''>
+              <relation connection='textscan.0iwxgx11m29lw71ga7bme0yuoyw6' name='q23.txt' table='[q23#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Category' ordinal='0' />
+                  <column datatype='integer' name='Revenue' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Revenue Categories - 192424350</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='q23' name='federated.0aqfdzc022t3ps1f0x26q1tox8rh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aqfdzc022t3ps1f0x26q1tox8rh'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[pcto:sum:Revenue:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0aqfdzc022t3ps1f0x26q1tox8rh].[none:Category:nk]' />
+              <size column='[federated.0aqfdzc022t3ps1f0x26q1tox8rh].[sum:Revenue:qk]' />
+              <text column='[federated.0aqfdzc022t3ps1f0x26q1tox8rh].[none:Category:nk]' />
+              <text column='[federated.0aqfdzc022t3ps1f0x26q1tox8rh].[pcto:sum:Revenue:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7D0FE085-117B-4F1F-9A25-1F06861348A1}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0aqfdzc022t3ps1f0x26q1tox8rh].[none:Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0aqfdzc022t3ps1f0x26q1tox8rh].[none:Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DF249E36-949B-4B4E-92FD-E7631623E001}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

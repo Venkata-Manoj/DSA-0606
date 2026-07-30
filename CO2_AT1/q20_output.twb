@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='q20' inline='true' name='federated.1gnwnsx1vlqxcj10lwyxc034dj64' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='q20' name='textscan.0u9nbe7072izoq1boyvqp1ml8zyf'>
+            <connection class='textscan' directory='C:/Users/bsuha/Downloads/DSA - 0606 - DHV/CO&apos;s/CO2_AT1' filename='q20.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0u9nbe7072izoq1boyvqp1ml8zyf' name='q20.txt' table='[q20#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Response' ordinal='0' />
+            <column datatype='integer' name='Count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[q20.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Response</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Response]</local-name>
+            <parent-name>[q20.txt]</parent-name>
+            <remote-alias>Response</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[q20.txt_F8FE9BDBEE364E78883936E45C5B455C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count]</local-name>
+            <parent-name>[q20.txt]</parent-name>
+            <remote-alias>Count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[q20.txt_F8FE9BDBEE364E78883936E45C5B455C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='q20.txt' datatype='table' name='[__tableau_internal_object_id__].[q20.txt_F8FE9BDBEE364E78883936E45C5B455C]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='q20.txt' id='q20.txt_F8FE9BDBEE364E78883936E45C5B455C'>
+            <properties context=''>
+              <relation connection='textscan.0u9nbe7072izoq1boyvqp1ml8zyf' name='q20.txt' table='[q20#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Response' ordinal='0' />
+                  <column datatype='integer' name='Count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Survey Response - 192424350</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='q20' name='federated.1gnwnsx1vlqxcj10lwyxc034dj64' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gnwnsx1vlqxcj10lwyxc034dj64'>
+            <column datatype='integer' name='[Count]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Response]' role='dimension' type='nominal' />
+            <column-instance column='[Response]' derivation='None' name='[none:Response:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Count]' derivation='Sum' name='[sum:Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1gnwnsx1vlqxcj10lwyxc034dj64].[none:Response:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Poor&quot;</bucket>
+              <bucket>&quot;Fair&quot;</bucket>
+              <bucket>&quot;Good&quot;</bucket>
+              <bucket>&quot;Excellent&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gnwnsx1vlqxcj10lwyxc034dj64].[sum:Count:qk]</rows>
+        <cols>[federated.1gnwnsx1vlqxcj10lwyxc034dj64].[none:Response:nk]</cols>
+      </table>
+      <simple-id uuid='{151DBC55-5147-4357-906E-1C60742D9B39}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gnwnsx1vlqxcj10lwyxc034dj64].[none:Response:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{98D6227D-BBFA-4631-AEFB-7C23DA025888}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

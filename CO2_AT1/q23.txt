@@ -1,0 +1,6 @@
+Category,Revenue
+Electronics,400000
+Clothing,250000
+Books,150000
+Toys,100000
+Home,100000

@@ -1,0 +1,7 @@
+Month,UnitsSold,AvgPrice
+Jan,100,20
+Feb,120,22
+Mar,90,25
+Apr,150,21
+May,130,23
+Jun,160,24
